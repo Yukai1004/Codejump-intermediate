@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body{
+    max-width: 1360px;
+    padding: 0 40px;
+    font-size: 12px;
+}
+header{
+    margin: 32px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header span{
+    display: block;
+    transition: all 0.5s;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+}
+header span:first-child{
+    margin-bottom: 9px;
+}
+.close{
+    display: none;
+}
+.open{
+    display: block;
+    position: fixed;
+    left: 160px;
+    transition: all 0.5s;
+}
+
+
+@media screen and (max-width: 900px){
+ 
+}
+    
