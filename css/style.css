@@ -25,8 +25,16 @@ header span:first-child{
 .open{
     display: block;
     position: fixed;
-    left: 160px;
-    transition: all 0.5s;
+    animation: slideinLeft 2s;
+    
+}
+@keyframes slideinLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 
