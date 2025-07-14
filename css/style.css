@@ -8,6 +8,11 @@ header{
     margin: 32px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+header h1 img{
+    width: 180px;
+    height: 25px;
 }
 header span{
     display: block;
@@ -25,9 +30,29 @@ header span:first-child{
 .open{
     display: block;
     position: fixed;
-    animation: slideinLeft 2s;
-    
+    animation: slideinLeft 1s;
 }
+main ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap:35px;
+    grid-row-gap:35px; 
+    margin-bottom: 32px;
+}
+main ul li a img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+main ul li a p{
+    margin-bottom: 8px;
+}
+main>a{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+
 @keyframes slideinLeft {
   0% {
     transform: translateX(-50px);
